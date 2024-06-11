@@ -35,13 +35,13 @@ export const APIConstant={
     DELETE_PRODUCT_FROM_CARTID:"DeleteProductFromCartById?id=",
 
     // Product APIs
-    GET_ALL_PRODUCT:"",
-    GET_PRODUCT_BY_CATEGORYID:"",
-    CREATE_PRODUCT:"",
-    UPDATE_PRODUCT:"",
-    DELETE_PRODUCT_BY_ID:"",
-    GET_PRODUCT_BY_ID:"",
-    GET_CART_PRODUCT_BY_CUSTID:"",
+    GET_ALL_PRODUCT:"GetAllProducts",
+    GET_PRODUCT_BY_CATEGORYID:"GetAllProductsByCategoryId?id=",
+    CREATE_PRODUCT:"CreateProduct",
+    UPDATE_PRODUCT:"UpdateProduct",
+    DELETE_PRODUCT_BY_ID:"DeleteProductById?id=",
+    GET_PRODUCT_BY_ID:"GetProductById?id=",
+    GET_CART_PRODUCT_BY_CUSTID:"GetCartProductsByCustomerId?id=",
     
 
 }
