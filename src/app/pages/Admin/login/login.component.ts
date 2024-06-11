@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { LoginService } from '../../../core/services/Login/login.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +17,7 @@ export class LoginComponent implements OnInit{
 
   loginObj:Login=new Login();
 
-  constructor(private http:HttpClient,private loginsrv:LoginService){
+  constructor(private http:HttpClient,private loginsrv:LoginService,private router:Router){
 
   }
 
@@ -25,7 +26,14 @@ export class LoginComponent implements OnInit{
   
   }
 
-
+  login(){
+   if(this.loginObj.userName=="admin" && this.loginObj.userPassword=="admin"){
+    this.router.navigateByUrl('/product');
+   }
+   else{
+    alert('Wrong Credentials');
+   }
+  }
 
   
 }
