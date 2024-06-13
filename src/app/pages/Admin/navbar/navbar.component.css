@@ -1,3 +1,6 @@
 .navbar{
     background-color: #c471f5;
 }
+.nav-item:hover{
+background-color: black;
+}

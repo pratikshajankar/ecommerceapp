@@ -63,6 +63,7 @@ this.productsrv.createProduct(this.Productobj).subscribe((res:any)=>{
   }
 
   onDelete(id:any){
+    const isDelete=confirm('Are you sure want to delete');
     this.productsrv.deleteProduct(id.productId).subscribe((res:any)=>{
       if(res.result){
         alert("product deleted succeessfully");
