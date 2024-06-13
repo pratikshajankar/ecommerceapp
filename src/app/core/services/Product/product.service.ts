@@ -28,4 +28,8 @@ export class ProductService {
   getProductbyId(id:any){
     return this.http.get(APIConstant.API_URL+APIConstant.GET_PRODUCT_BY_ID+id);
   }
+
+  getProductByCatId(cid:any){
+    return this.http.get(APIConstant.API_URL+APIConstant.GET_PRODUCT_BY_CATEGORYID+cid);
+  }
 }
