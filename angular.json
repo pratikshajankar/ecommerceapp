@@ -60,7 +60,8 @@
               "buildTarget": "EcommerceApp:build:production"
             },
             "development": {
-              "buildTarget": "EcommerceApp:build:development"
+              "buildTarget": "EcommerceApp:build:development",
+              "port":4203
             }
           },
           "defaultConfiguration": "development"

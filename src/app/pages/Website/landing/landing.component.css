@@ -32,7 +32,7 @@ a:hover {
   
 }
 
-.fa:hover {
+.fas:hover {
     color: red !important;
 }
 
@@ -118,3 +118,4 @@ img {
     margin-top: 20%;
   }
   
+
